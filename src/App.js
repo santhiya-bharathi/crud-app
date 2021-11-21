@@ -88,9 +88,9 @@ function Home() {
   return (
     <div className="home">
       <h2 className="home-hello">Hello All!!!</h2>
-      <img src="https://acegif.com/wp-content/uploads/2021/01/welcome-m.gif" alt="welcome"/>
+      <img src="https://cloudproserv.com/wp-content/uploads/2019/05/Welcome-to-our-new-website-1280x720.jpg" alt="welcome"/>
       <div>
-      <Button onClick={()=>history.push("/scientistlist") }variant="contained">Go to scientistlist<ArrowForwardIcon/></Button>
+      <Button onClick={()=>history.push("/scientistlist") }variant="contained">scientistlist<ArrowForwardIcon/></Button>
       </div>
     </div>
   );
