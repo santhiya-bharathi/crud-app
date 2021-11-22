@@ -16,6 +16,9 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
+
+
+// this app is developed by using api and useEffect 
 export default function App() {
 
 const [scientist, setScientist] = useState([]);
@@ -106,6 +109,7 @@ function NotFound(){
   );
 }
 
+//crud app is developed by using POST method using API
 
 function Createscientist(){
   const history = useHistory();
@@ -136,6 +140,8 @@ const addUser =()=>{
   );
 }
 
+// edit is developed by using GET and PUT method using API
+
 function Editscientist(){
   
   const {id} = useParams();
@@ -149,6 +155,7 @@ useEffect(()=>{
   return scientistdet? <Updatescientist scientistdet={scientistdet}/>:"";
   
 }
+
 
 function Updatescientist({scientistdet}){
   const [name, setName] = useState(scientistdet.name);
@@ -179,6 +186,7 @@ function Updatescientist({scientistdet}){
 }
 
   
+// userlist developed by using GET method and DELETE method is used for delete list using API
 
 function Scientistlist(){
 
